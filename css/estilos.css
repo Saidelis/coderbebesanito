@@ -1,0 +1,214 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  }
+  
+body{
+    background-color: #F6F2E1;
+     font-family: 'Roboto', sans-serif;
+  }
+
+.menu {
+    background-color: #dc3545;
+    font-size: 20px;
+    color:white;
+    text-align: right;
+   overflow: hidden;
+   padding: 20px 30px 20px 30px;
+   border-radius: 8px;
+
+  }
+
+  a{
+  text-decoration: none;
+  color:white;
+}
+  h1{
+    color: white;
+    background-color:#dc3545;
+    background-size:cover;
+    font-size: 2rem;
+    margin: 20px 300px 20px 20px;
+    padding: 50px 20px 10px 100px;
+    display: inline-block;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    overflow-wrap: break-word;
+  
+  }
+
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.fondo-imagen{
+  background-image: url(../multimedia/bebé.png);
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+
+
+.bienvenida{
+  text-align:left;
+  font-size: 40px;
+  margin: 30px,20px;
+  padding: 30px 30px;
+  color:white;
+
+} 
+
+ul li{
+    display: inline-block;
+    padding-left: 60px;
+    margin: 30px,30px;
+    text-align: right;
+    color:white;
+    
+}
+
+.menu-bajo{
+font-size: 20px;
+font-weight: bold;
+display: flex;
+flex-direction:column-reverse;
+justify-content: center;
+padding: 50px;
+margin-top: 100px;
+align-items: center;
+position: relative;
+
+}
+
+
+.formulario{
+  display:block;
+  margin-bottom: 20px;
+  margin-left: 400px;
+}
+
+.imagen-embarazada{
+  background-image: url(../multimedia/joven-asiatica-embarazada-sosteniendo-su-vientre-hablando-su-hijo-mama-siente-feliz-sonriendo-positiva-pacifica-mientras-cuida-bebe-embarazo-cerca-ventana-sala-estar-casa.jpg);
+background-size: cover;
+block-size: 600px;
+}
+
+.lorem{
+text-align: justify;
+margin-top: 50px;
+margin-bottom: 20px;
+margin-left: 50px;
+margin-right: 50px;
+
+}
+
+.bienvenida-c{
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.verde{
+  background-color: green;
+  width: 200px;
+  height: 200px;
+  margin-right: 50px;
+  text-align: left;
+}
+.violeta{
+  background-color: violet;
+  width: 200px;
+  height: 200px;
+  margin-right: 50px;
+  text-align: left;
+  
+}
+.azul{
+  background-color: blue;
+  width: 200px;
+  height: 200px;
+  margin-right: 50px;
+  text-align: left;
+
+}
+
+.amarillo{
+  background-color: yellow;
+  width: 200px;
+  height: 200px;
+  margin-right: 50px;
+  text-align: left;
+
+}
+
+.trimestres{
+  display:flex;
+margin: 50px 20px 50px 50px;
+font-size: 30px;
+color: #F6F2E1;
+background-color: #dc3545;
+justify-content: center;
+}
+
+.fondo{
+  background-image: url(../multimedia/mama-con-su-bebe-en-brazos.jpg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  display: inline-flexbox;
+}
+
+header nav ul{
+  color: whitesmoke;
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    text-align: left;
+}
+
+footer{
+  margin-top: 3rem;
+  color: rgb(168, 10, 10);
+  text-align: center;
+
+}
+
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    padding: 30px;
+  
+  }
+  
+  .grid-container img{
+    
+    max-width: 100%;
+    height: 100%;
+    border-radius: 10px ;
+   
+  
+  }
+.cuerpo{
+  background-image: url(../multimedia/pexels-photo-3694711.webp);
+}
+
+.logo{
+  height: 90px;
+  width: 90px;
+  align-items:center;
+  justify-content: space-between;
+  display:flex;
+  overflow: hidden;
+}
+
+@media screen and (min-width:600px) {
+  header nav ul li{
+    grid-template-areas: none;
+  }
+  
+}
