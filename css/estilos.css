@@ -6,7 +6,7 @@
   }
   
 body{
-    background-color: #F6F2E1;
+    background-color: rgba(128, 128, 128, 0.906);
      font-family: 'Roboto', sans-serif;
   }
 
@@ -51,15 +51,18 @@ header{
   background-image: url(../multimedia/bebé.png);
   background-repeat:no-repeat;
   background-size: cover;
+  width: 100%;
 }
 
 
 .bienvenida{
   text-align:left;
-  font-size: 40px;
+  font-size: 3rem;
   margin: 30px,20px;
   padding: 30px 30px;
   color:white;
+  display:flex;
+  flex-direction: column;
 
 } 
 
@@ -79,9 +82,8 @@ display: flex;
 flex-direction:column-reverse;
 justify-content: center;
 padding: 50px;
-margin-top: 100px;
+margin-top: 50px;
 align-items: center;
-position: relative;
 
 }
 
@@ -108,8 +110,12 @@ margin-right: 50px;
 }
 
 .bienvenida-c{
-  font-size: 20px;
-  margin-top: 30px;
+  font-size: 1.5rem;
+  margin: 30px,20px;
+  padding: 30px 30px;
+  color: white;
+  
+  
 }
 
 .verde{
@@ -118,21 +124,29 @@ margin-right: 50px;
   height: 200px;
   margin-right: 50px;
   text-align: left;
+  padding: 40px 40px;
+  border-radius: 5px;
+  
 }
+
 .violeta{
   background-color: violet;
   width: 200px;
   height: 200px;
   margin-right: 50px;
   text-align: left;
-  
+  padding: 40px 40px;
+  border-radius: 5px;
 }
+
 .azul{
   background-color: blue;
   width: 200px;
   height: 200px;
   margin-right: 50px;
   text-align: left;
+  padding: 40px 40px;
+  border-radius: 5px;
 
 }
 
@@ -142,6 +156,8 @@ margin-right: 50px;
   height: 200px;
   margin-right: 50px;
   text-align: left;
+  padding: 40px 40px;
+  border-radius: 5px;
 
 }
 
@@ -149,7 +165,7 @@ margin-right: 50px;
   display:flex;
 margin: 50px 20px 50px 50px;
 font-size: 30px;
-color: #F6F2E1;
+color: white;
 background-color: #dc3545;
 justify-content: center;
 }
@@ -170,9 +186,11 @@ header nav ul{
 }
 
 footer{
-  margin-top: 3rem;
-  color: rgb(168, 10, 10);
+  margin-top: 2rem;
+  color: white;
   text-align: center;
+  background-color: #dc3545;
+  height: auto;
 
 }
 
@@ -210,5 +228,14 @@ footer{
   header nav ul li{
     grid-template-areas: none;
   }
-  
+  }
+
+  .nav-link{
+    color:white;
+  }
+.navbar-brand{
+  height: 70px;
+  width: 50px;
+  align-self: left;
+  display: flex;
 }
