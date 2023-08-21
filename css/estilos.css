@@ -17,7 +17,7 @@ body{
     text-align: right;
    overflow: hidden;
    padding: 20px 30px 20px 30px;
-   border-radius: 8px;
+   border-radius: 10px;
 
   }
 
@@ -78,10 +78,10 @@ ul li{
 .menu-bajo{
 font-size: 20px;
 font-weight: bold;
-display: flex;
-flex-direction:column-reverse;
+display: grid;
+flex-direction:row;
 justify-content: center;
-padding: 50px;
+padding: 1rem;
 margin-top: 50px;
 align-items: center;
 
@@ -230,12 +230,18 @@ footer{
   }
   }
 
-  .nav-link{
+ .nav-link{
     color:white;
   }
 .navbar-brand{
   height: 70px;
   width: 50px;
-  align-self: left;
+  align-items: left;
   display: flex;
 }
+@media screen and (min-width:600px){
+ 
+  body .fondo-imagen{
+      justify-content: 100%;
+  }
+
