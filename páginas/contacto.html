@@ -81,92 +81,40 @@
             
             <H1>Contáctanos</H1>
 
-         <div class="formulario">
+            <h3>Envianos tus comentarios</h3>
+          </section>
 
-           <label for="nombre">Nombre</label>
-           <input type="text" required name="nombre">
-      
-        </div>
-
-           <div class="formulario">
-
-           <label for="apellido">Apellido</label>
-           <input type="text" required name="apellido">
-
-        </div>
-
-        <div class="formulario">
-           <label for="mail">Correo electrónico</label>
-           <input type="email" required name="mail">
-
-        </div>
-
-
-    <div class="formulario">    
-           <label for="sexo">Elegí tu sexo:</label>
-           <input type="radio" name="sexo" value="F">Femenino
-           <input type="radio" name="sexo" value="M">Masculino
-           <input type="radio" name="sexo" value="PN">Prefiero no especificar
-           
-        </div>
-
-        <div class="formulario">
-           <label for="pais">De que pais sos?</label>
-           <select name="pais">
-               <option value="ARG">Argentina</option>
-               <option value="VE">Venezuela</option>
-               <option value="CO">Colombia</option>
-               <option value="Bra">Brasil</option>
-           </select>
-
-        </div>
-
-        <div class="formulario">
-           <label for="mensaje">Tus comentarios</label>
-           <textarea name="mensaje" cols="30" rows="10"></textarea>
-
-        </div>
-
-        <div class="formulario">
-           <label for="terminos">Acepta términos y condiciones</label>
-           <input type="checkbox" name="terminos" required>
-    
-        </div>
-
-        <div class="formulario">
-           <input type="reset">
-           <input type="submit">
-
-        </div>
+     <section class="formulario-nuevo">
+           <form>
+             <div class="mb-3">
+               <label for="Nombre" class="form-label">Nombre</label>
+               <input type="text" class="form-control" id="Nombre">
+             </div>
+             <div class="mb-3">
+               <label for="Apellido" class="form-label">Apellido</label>
+               <input type="text" class="form-control" id="Apellido">
+             </div>
+             <div class="mb-3">
+               <label for="Email1" class="form-label">Correo electrónico</label>
+               <input type="email" class="form-control" id="Email1" aria-describedby="emailHelp">
+               <div id="emailHelp" class="form-text">Coloque su dirección de correo electrónico.</div>
+             </div>
+             <div class="mb-3">
+               <textarea class="elementor-field-textual elementor-field  elementor-size-m" name="form_fields[message]" id="form-field-message" cols="30"rows="5" placeholder="Mensaje"></textarea>			
+            	</div>
+             
+             <div class="mb-3 form-check">
+               <input type="checkbox" required ="form-check-input" id="exampleCheck1">
+               <label class="form-check-label" for="terminos">Acepta términos y condiciones</label>
+             </div>
+             <button type="submit" class="btn btn-danger">Enviar</button>
+        
       </form>
-
-     
-   </section>
-       <section class="formulario-nuevo">
-        <form>
-          <div class="mb-3">
-            <label for="Email1" class="form-label">Correo electrónico</label>
-            <input type="email" class="form-control" id="Email1" aria-describedby="emailHelp">
-            <div id="emailHelp" class="form-text">Coloque su dirección de correo electrónico.</div>
-          </div>
-          <div class="mb-3">
-            <label for="Nombre" class="form-label">Nombre</label>
-            <input type="text" class="form-control" id="Nombre">
-          </div>
-          <div class="mb-3">
-            <label for="Apellido" class="form-label">Apellido</label>
-            <input type="text" class="form-control" id="Apellido">
-          </div>
-          <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="terminos">Acepta términos y condiciones</label>
-          </div>
-          <button type="submit" class="btn btn-success">Enviar</button>
-        </form>
+      
        </section>
    
         <footer>
-         <p> Esta pagina fue creada por Saidelis Caigua 2023.</p>
+         <p> Esta pagina fue creada por Saidelis Caigua 2023. Todos los derechos reservados</p>
 
         </footer>
     

@@ -8,15 +8,16 @@
 body{
     background-color: rgba(128, 128, 128, 0.906);
      font-family: 'Roboto', sans-serif;
+     color: white;
   }
 
 .menu {
     background-color: #dc3545;
     font-size: 20px;
     color:white;
-    text-align: right;
+    text-align: left;
    overflow: hidden;
-   padding: 20px 30px 20px 30px;
+   padding: 20px 30px;
    border-radius: 10px;
 
   }
@@ -51,7 +52,7 @@ header{
 .fondo-imagen{
   background-image: url(../multimedia/bebé.png);
   background-repeat:no-repeat;
-  background-size: cover;
+  background-size: contain;
   width: 100%;
 }
 
@@ -101,12 +102,16 @@ background-size: cover;
 block-size: 600px;
 }
 
-.lorem{
+.mi-bebe{
 text-align: justify;
-margin-top: 50px;
-margin-bottom: 20px;
-margin-left: 50px;
-margin-right: 50px;
+margin: 50px 20px 50px 50px;
+display: flex;
+flex-direction: column;
+gap: 30px;
+padding: 30px;
+justify-content: center;
+font-size: 18px;
+width: 80%;
 
 }
 
@@ -125,7 +130,7 @@ margin-right: 50px;
   height: 200px;
   margin-right: 50px;
   text-align: left;
-  padding: 40px 40px;
+  padding: 40px 20px;
   border-radius: 5px;
   
 }
@@ -136,7 +141,7 @@ margin-right: 50px;
   height: 200px;
   margin-right: 50px;
   text-align: left;
-  padding: 40px 40px;
+  padding: 40px 20px;
   border-radius: 5px;
 }
 
@@ -146,7 +151,7 @@ margin-right: 50px;
   height: 200px;
   margin-right: 50px;
   text-align: left;
-  padding: 40px 40px;
+  padding: 40px 20px;
   border-radius: 5px;
 
 }
@@ -157,18 +162,18 @@ margin-right: 50px;
   height: 200px;
   margin-right: 50px;
   text-align: left;
-  padding: 40px 40px;
+  padding: 40px 20px;
   border-radius: 5px;
 
 }
 
 .trimestres{
-  display:flex;
+display:flex;
+flex-direction: column;
 margin: 50px 20px 50px 50px;
 font-size: 30px;
 color: white;
-background-color: #dc3545;
-justify-content: center;
+
 }
 
 .fondo{
@@ -183,18 +188,36 @@ header nav ul{
     list-style: none;
     display: flex;
     gap: 2rem;
-    text-align: left;
+  
 }
 
 footer{
-  margin-top: 2rem;
   color: white;
-  text-align: center;
+  justify-content: center;
   background-color: #dc3545;
-  height: auto;
+  margin-top: 1rem;
+  padding: 1rem;
+  display: flex;
+  position: sticky;
+  bottom: 0%;
+
+}
+.formulario-nuevo{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding-left: 3rem;
+  border: 3px solid #dc3545;
+}
+.btn{
+  width: 25%;
 
 }
 
+h3{
+  text-align: left;
+  padding-left: 3rem;
+}
   
   .grid-container {
     display: grid;
@@ -231,15 +254,20 @@ footer{
 }
 
 .imagen-uno{
-  width: 50%;
+  width: 25%;
+  border-radius: 2%;
 }
-@media screen and (min-width:600px) {
-  header nav ul li{
-    grid-template-areas: none;
-  }
+  .spotify-bebé{
+    display:grid;
+    grid-template-columns: repeat(2,50%);
+    justify-content: center;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+
+    
   }
 
- .nav-link{
+  .nav-link{
     color:white;
   }
 .navbar-brand{
@@ -248,29 +276,41 @@ footer{
   align-items: left;
   display: flex;
 }
-@media screen and (min-width:600px){
+
+      @media screen and(min-width:600px) {
+    body .fondo-imagen{
+  background-position: 80%;
+  display: none;
+
+  }
+  .menu-bajo ul li a {
+      font-size: 18px;
+      display: flex;
+      gap: 0.8rem;
+      flex-direction: column;
+    }
+  
+  main {
+    text-align: left;
+    font-size: small;
+  }
+  .navbar-brand img {
+    
+    width: 150px;
+      }
+
+    .navbar-nav {
+    flex-direction: column;
+      }
+    .nav-item {
+   margin-bottom: 10px;
+          }
+}
+
+
+@media screen and (max-width: 1200px) {
+  body{
+    width: 100%;
+  }
+}
  
-  body .fondo-imagen{
-      background-position: 50%;
-  }
-  header{
-    padding: 40px;
-    font-size: 2rem;
-  }
-main{
-  font-size: 0.5rem;
-}
-  }
-
-  .mb-3{
-padding-left: 25%;
-padding-right: 1rem;
-align-content: center;
-display: inline-block;
-width: 70%;
-
-.formulario-nuevo{
-  border-style: double;
-}
-
-}
