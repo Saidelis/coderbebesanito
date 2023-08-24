@@ -90,12 +90,6 @@ align-items: center;
 }
 
 
-.formulario{
-  display:block;
-  margin-bottom: 20px;
-  margin-left: 400px;
-}
-
 .imagen-embarazada{
   background-image: url(../multimedia/joven-asiatica-embarazada-sosteniendo-su-vientre-hablando-su-hijo-mama-siente-feliz-sonriendo-positiva-pacifica-mientras-cuida-bebe-embarazo-cerca-ventana-sala-estar-casa.jpg);
 background-size: cover;
@@ -170,9 +164,12 @@ width: 80%;
 .trimestres{
 display:flex;
 flex-direction: column;
-margin: 50px 20px 50px 50px;
+justify-content: center;
+margin-left: 1.8rem;
+padding-right: 1rem;
 font-size: 30px;
 color: white;
+width: 100%;
 
 }
 
@@ -187,27 +184,27 @@ header nav ul{
   color: whitesmoke;
     list-style: none;
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
   
 }
 
 footer{
   color: white;
-  justify-content: center;
+ text-align: center;
   background-color: #dc3545;
-  margin-top: 1rem;
-  padding: 1rem;
-  display: flex;
-  position: sticky;
-  bottom: 0%;
+  background-size: 2rem;
+  margin-bottom:0%;
+  margin-top: 3rem;
 
 }
 .formulario-nuevo{
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  padding-left: 3rem;
+  width: 80%;
+  padding-left: 1.8rem;
   border: 3px solid #dc3545;
+}
+
+section form{
+  justify-content: center;
 }
 .btn{
   width: 25%;
@@ -273,26 +270,37 @@ h3{
 .navbar-brand{
   height: 70px;
   width: 50px;
-  align-items: left;
+  justify-content: space-around;
   display: flex;
 }
 
-      @media screen and(min-width:600px) {
+  @media screen and(min-width:390px) {
     body .fondo-imagen{
-  background-position: 80%;
-  display: none;
+  background-position: 100%;
+  font-size: 1rem;
+
+  main p {
+    font-size: 0.5rem;
 
   }
-  .menu-bajo ul li a {
+
+  }
+  article div ul li a {
       font-size: 18px;
-      display: flex;
+      display: grid;
+      justify-content: center;
       gap: 0.8rem;
-      flex-direction: column;
+     grid-template-columns: 1fr;
+     grid-template-rows: (2,30%);
+      width: 100%;
     }
-  
+  .formulario-nuevo{
+  margin-left: 2rem;
+  }
   main {
     text-align: left;
     font-size: small;
+    height: 80vh;
   }
   .navbar-brand img {
     
@@ -305,12 +313,31 @@ h3{
     .nav-item {
    margin-bottom: 10px;
           }
+    .mi-bebe{
+font-size:0.5rem;
+margin: 0.5rem;
+text-align: justify;
+    }
 }
 
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1024px) {
   body{
     width: 100%;
+    height: 80vh;
+  }
+
+  header{
+    justify-content: space-between;
+    margin: auto;
+  }
+
+  footer{
+    height: 20vh;
+  }
+  section article div ul li{
+  
+    gap:1rem;
   }
 }
  
