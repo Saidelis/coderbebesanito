@@ -1,357 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-  }
-  
-body{
-    background-color: rgba(128, 128, 128, 0.906);
-     font-family: 'Roboto', sans-serif;
-     color: white;
-  }
+body {
+  background-image: radial-gradient(circle, #3f5efb 0%, #fc466b 100%);
+  font-family: "Roboto", sans-serif;
+  color: white; }
 
-.menu {
-    background-color: #dc3545;
-    font-size: 20px;
-    color:white;
-    text-align: left;
-   overflow: hidden;
-   padding: 20px 30px;
-   border-radius: 10px;
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px; }
+  header nav {
+    background-color: #4a0868e5;
+    width: 100vh; }
+    header nav .nav-link {
+      color: white;
+      font-size: 1.5rem; }
+    header nav ul {
+      gap: 1.5rem; }
 
-  }
+main {
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 25px; }
+  main h1 {
+    border-width: 600; }
 
-  a{
-  text-decoration: none;
-  color:white;
-}
-  h1{
-    color: white;
-    background-color:#dc3545;
-    background-size:cover;
-    font-size: 2rem;
-    margin: 20px 300px 20px 20px;
-    padding: 50px 20px 10px 100px;
-    display: inline-block;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    overflow-wrap: break-word;
-  
-  }
-
-
-header{
+section {
+  text-align: center;
+  font-size: 25px;
+  margin: 15px; }
+  section div {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    color: white;
-    padding: 40px;
-}
-
-.fondo-imagen{
-  background-image: url(../multimedia/bebé.png);
-  background-repeat:no-repeat;
-  background-size: contain;
-  width: 100%;
-}
-
-
-.bienvenida{
-  text-align:left;
-  font-size: 3rem;
-  margin: 1rem;
-  padding: 40px;
-  color:white;
-  display:flex;
-  flex-direction: column;
-
-} 
-
-ul li{
-    display: inline-block;
-    padding-left: 60px;
-    margin: 30px,30px;
-    text-align: right;
-    color:white;
-    
-}
-
-.menu-bajo{
-font-size: 20px;
-font-weight: bold;
-display: grid;
-flex-direction:row;
-justify-content: center;
-padding: 1rem;
-margin-top: 50px;
-align-items: center;
-
-}
-
-
-.imagen-embarazada{
-  background-image: url(../multimedia/joven-asiatica-embarazada-sosteniendo-su-vientre-hablando-su-hijo-mama-siente-feliz-sonriendo-positiva-pacifica-mientras-cuida-bebe-embarazo-cerca-ventana-sala-estar-casa.jpg);
-background-size: cover;
-block-size: 600px;
-}
-
-.mi-bebe{
-text-align: justify;
-display: flex;
-flex-direction: column;
-gap: 30px;
-padding: 1rem;
-justify-content: center;
-font-size: 1rem;
-width: 100%;
-
-}
-
-.bienvenida-c{
-  font-size: 1.5rem;
-  margin: 30px,20px;
-  padding: 30px;
-  color: white;
-  
-  
-}
-
-.verde{
-  background-color: green;
-  width: 200px;
-  height: 200px;
-  margin-right: 30px;
-  text-align: left;
-  padding: 30px 15px;
-  border-radius: 5px;
-  
-}
-
-.violeta{
-  background-color: violet;
-  width: 200px;
-  height: 200px;
-  margin-right: 30px;
-  text-align: left;
-  padding: 30px 15px;
-  border-radius: 5px;
-}
-
-.azul{
-  background-color: blue;
-  width: 200px;
-  height: 200px;
-  margin-right: 30px;
-  text-align: left;
-  padding: 30px 15px;
-  border-radius: 5px;
-
-}
-
-.amarillo{
-  background-color: yellow;
-  width: 200px;
-  height: 200px;
-  margin-right: 30px;
-  text-align: left;
-  padding: 30px 15px;
-  border-radius: 5px;
-
-}
-
-.trimestres{
-display:flex;
-flex-direction: column;
-justify-content: center;
-padding-right: 1rem;
-font-size: 30px;
-color: white;
-width: 100%;
-min-height: calc(100vh-100px-300px);
-
-}
-
-.fondo{
-  background-image: url(../multimedia/lactancia-materna.webp);
-  background-repeat: no-repeat;
-  background-position-x: center;
-  display: inline-flexbox;
-}
-
-header nav ul{
-  color: whitesmoke;
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-  
-}
-
-footer{
-  color: white;
- text-align: center;
-  background-color: #dc3545;
-  background-size: 2rem;
-  margin-top: 3rem;
-  width: 100%;
-  height: 300px;
-
-}
-.formulario-nuevo{
-  width: 80%;
-  padding-left: 1.8rem;
-  border: 3px solid #dc3545;
-}
-
-section form{
-  justify-content: center;
-}
-.btn{
-  width: 25%;
-
-}
-
-h3{
-  text-align: left;
-  padding-left: 3rem;
-}
-  
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px;
-    padding: 30px;
-    min-height: calc(100vh-100px-300px);
-  }
-  
-  .grid-container img{
-    
-    max-width: 100%;
-    height: 100%;
-    border-radius: 10px ;
-   
-  
-  }
-.cuerpo{
-  background-image: url(../multimedia/pexels-photo-3694711.webp);
-}
-
-.logo{
-  height: 90px;
-  width: 90px;
-  align-items:center;
-  justify-content: space-between;
-  display:flex;
-  overflow: hidden;
-}
-
-.mi-bebe{
-  color: white;
-  font-size: 2rem;
-}
-
-.imagen-uno{
-  width: 25%;
-  border-radius: 2%;
-}
-  .spotify-bebé{
-    display:grid;
-    grid-template-columns: repeat(2,50%);
-    justify-content: center;
-    margin-left: 1rem;
-    margin-bottom: 2rem;
-
-    
-  }
-
-  .nav-link{
-    color:white;
-  }
-.navbar-brand{
-  height: 70px;
-  width: 50px;
-  justify-content: space-around;
-  display: flex;
-}
-
-  @media screen and(min-width:390px) {
-    body .fondo-imagen{
-  background-position: 100%;
-  font-size: 1rem;
-
-  main p {
-    font-size: 0.5rem;
-
-  }
-  .grid-container{
-    height: 90vh;
-  
-  }
-  footer{
-    height: 10vh;
-  }
-
-  }
-  article div ul li a {
-      font-size: 18px;
-      display: grid;
-      justify-content: center;
-      gap: 0.8rem;
-     grid-template-columns: 1fr;
-     grid-template-rows: (2,30%);
-      width: 100%;
-    }
-  .formulario-nuevo{
-  margin-left: 2rem;
-  }
-  main {
-    text-align: left;
-    font-size: small;
-    height: 80vh;
-    width: 80%;
-  }
-  .navbar-brand img {
-    
-    width: 150px;
-      }
-
-    .navbar-nav {
     flex-direction: column;
-      }
-    .nav-item {
-   margin-bottom: 10px;
-          }
-    .mi-bebe{
-font-size:0.5rem;
-margin: 0.5rem;
-text-align: justify;
-    }
-}
+    gap: 1rem; }
+    section div ul {
+      list-style: none; }
+    section div li {
+      align-items: center; }
+    section div a {
+      list-style: none;
+      text-decoration: none;
+      color: white; }
+    section div .verde {
+      background-color: green;
+      width: 200px;
+      height: 200px;
+      margin-right: 30px;
+      text-align: left;
+      padding: 30px 15px;
+      border-radius: 5px; }
+    section div .violeta {
+      background-color: green;
+      width: 200px;
+      height: 200px;
+      margin-right: 30px;
+      text-align: left;
+      padding: 30px 15px;
+      border-radius: 5px;
+      background-color: violet; }
+    section div .amarillo {
+      background-color: green;
+      width: 200px;
+      height: 200px;
+      margin-right: 30px;
+      text-align: left;
+      padding: 30px 15px;
+      border-radius: 5px;
+      color: white;
+      background-color: yellow; }
+    section div .azul {
+      background-color: green;
+      width: 200px;
+      height: 200px;
+      margin-right: 30px;
+      text-align: left;
+      padding: 30px 15px;
+      border-radius: 5px;
+      background-color: blue; }
 
+footer {
+  background-color: #4a0868e5;
+  height: 15vh;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 25px; }
+
+@media screen and (min-width: 600px) {
+  article div ul li a {
+    font-size: 1.5rem;
+    display: grid;
+    justify-content: center;
+    gap: 0.8rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2, 30%;
+    width: 100%; }
+  .grid-container {
+    display: flex;
+    flex-direction: column; }
+  .formulario-nuevo {
+    margin-left: 2rem; }
+  main {
+    text-align: center;
+    font-size: 1.5rem;
+    width: 80%; }
+  .navbar-brand img {
+    width: 150px; }
+  .mi-bebe {
+    font-size: 1.5rem;
+    text-align: justify;
+    justify-content: center; } }
+
+main .grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  padding: 30px;
+  min-height: calc(100vh-100px-300px);
+  margin-bottom: 100px; }
+
+main .grid-container img {
+  max-width: 100%;
+  height: 100%;
+  border-radius: 10px; }
+
+section form {
+  width: 65%; }
+  section form div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    height: 90vh; }
+
+@media screen and (min-width: 600px) {
+  article div ul li a {
+    font-size: 1.5rem;
+    display: grid;
+    justify-content: center;
+    gap: 0.8rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2, 30%;
+    width: 100%; }
+  .grid-container {
+    display: flex;
+    flex-direction: column; }
+  .formulario-nuevo {
+    margin-left: 2rem; }
+  main {
+    text-align: center;
+    font-size: 1.5rem;
+    width: 80%; }
+  .navbar-brand img {
+    width: 150px; }
+  .mi-bebe {
+    font-size: 1.5rem;
+    text-align: justify;
+    justify-content: center; } }
 
 @media screen and (max-width: 1024px) {
-  body{
-    width: 100%;
-    height: 90vh;
-  }
-
-  main{
-    margin-left: 1rem;
-     
-
-  }
-
-  header{
+  main {
+    margin: 1rem;
+    text-align: center; }
+  header {
     justify-content: space-between;
-    margin: auto;
-  }
-
-  footer{
-    height: 10vh;
-  }
-  section article div ul li{
-  
-    gap:1rem;
-  }
-}
- 
+    margin: auto; }
+  footer {
+    height: 10vh; }
+  section article div ul li {
+    gap: 1rem; } }
