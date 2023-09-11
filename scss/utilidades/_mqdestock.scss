@@ -2,15 +2,17 @@
   main {
     margin: 1rem;
     text-align: center;
+    justify-content: center;
   }
 
   header {
     justify-content: space-between;
-    margin: auto;
+    margin: 1rem;
+    width: 100vh;
   }
 
   footer {
-    height: 10vh;
+    height: 15vh;
   }
   section article div ul li {
     gap: 1rem;
