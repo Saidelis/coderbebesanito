@@ -9,7 +9,11 @@ section {
       flex-direction: column;
       align-items: left;
       justify-content: left;
-      height: 90vh;
+      height: 85vh;
+      .btn bg-secondary {
+        align-items: center;
+        justify-content: center;
+      }
     }
   }
 }

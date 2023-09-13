@@ -1,0 +1,24 @@
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .grid-container {
+    height: 85vh;
+  }
+  h1,
+  h2 {
+    text-align: center;
+  }
+  .formulario-nuevo {
+    margin-left: 2rem;
+    text-align: left;
+    width: 65%;
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar-brand img {
+    width: 150px;
+  }
+  .mi-bebe {
+    font-size: 1.5rem;
+    text-align: center;
+    justify-content: center;
+  }
+}
